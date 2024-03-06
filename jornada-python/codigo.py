@@ -27,7 +27,7 @@ time.sleep(3)
 tabela = pd.read_csv("produtos.csv")
 
 for linha in tabela.index:
-    pyautogui.click(x=742, y=293)
+    pyautogui.click(x=765, y=286)
     codigo = tabela.loc[linha, "codigo"]
     pyautogui.write(str(codigo))
     pyautogui.press("tab")
